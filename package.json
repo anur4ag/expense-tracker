@@ -1,0 +1,25 @@
+{
+  "name": "expense",
+  "module": "server/index.ts",
+  "type": "module",
+  "scripts": {
+    "build": "bun server/index.ts",
+    "dev": "bun --watch server/index.ts"
+  },
+  "devDependencies": {
+    "bun-types": "latest",
+    "drizzle-kit": "^0.20.18",
+    "pg": "^8.11.5"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "@hono/zod-validator": "^0.2.1",
+    "@kinde-oss/kinde-typescript-sdk": "^2.9.0",
+    "drizzle-orm": "^0.30.10",
+    "hono": "^4.2.9",
+    "postgres": "^3.4.4",
+    "zod": "^3.23.5"
+  }
+}
